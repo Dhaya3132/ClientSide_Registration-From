@@ -10,8 +10,37 @@ body{
     background-color: #f5f5f5;
 }
 
-.container{
+nav{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
 
+.Logo{
+    display: flex;
+    align-items: center;
+    font-family: poppins;
+}
+
+.Logo h4{
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.Databasebutton{
+    padding: 8px;
+    background-color: #007FFF;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    font-size: 12px;
+    font-family: poppins;
+    margin-right: 15px;
+}
+
+.OuterContainer{
     height: 550px;
     width: 950px;
     max-width: 100%;
@@ -23,7 +52,7 @@ body{
     display: flex;
 }
 
-.left-column{
+.LeftPart{
     background-color: #007FFF;
     width: 42%;
     height: 550px;
@@ -31,7 +60,7 @@ body{
     color: white;
 }
 
-.leftpart{
+.LeftInneritems{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -44,33 +73,33 @@ body{
     height: 250px;  
 }
 
-.left-column h2{
+.LeftPart h2{
     font-family: poppins;
     font-weight: 300;
     font-size: 22px;
 }
 
-.left-column h3{
+.LeftPart h3{
     font-family: poppins;
     font-weight: 200;
     font-size: 16px;
     color: #ffffff9c;
 }
 
-.leftpartlogo{
+.LeftPartLogo{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.leftpartlogo h4{
+.LeftPartLogo h4{
     font-family: poppins;
     font-weight: 500;
     font-size: 19px;
 }
 
-.Leftpartbottom p{
+.LeftPartbottom p{
     text-align: center;
     font-family: poppins;
     font-weight: 300;
@@ -82,7 +111,7 @@ body{
     margin-top: 20px;
 }
 
-.right-column{
+.RightPart{
     background-color: #ffffff;
     width: 58%;
     height: 550px;
@@ -90,7 +119,7 @@ body{
     color: #000000;
 }
 
-.rightcontainer{
+.RigthPartConntainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,20 +127,20 @@ body{
     padding: 40px;
 }
 
-.title{
+.Title{
     font-family: poppins;
     font-size: 20px;
     font-weight: 500;
 }
 
-.titlepara{
+.TitleSummary{
     font-family: poppins;
     font-size: 12px;
     color: #0000007f;
     text-align: center;
 }
 
-.labelinput{
+.LabelInput{
     font-family: poppins;
     display: flex;
     flex-direction: column;
@@ -121,13 +150,13 @@ body{
 
 }
 
-.labelinput label{
+.LabelInput label{
     font-size: 13px;
     font-weight: 300;
     margin: 5px 0px 5px 0px;
 }
 
-.labelinput input{
+.LabelInput input{
     width: 300px;
     padding: 13px;
     border-radius: 5px;

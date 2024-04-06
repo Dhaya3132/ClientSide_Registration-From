@@ -12,43 +12,57 @@
 
 <body>
 
-    <section class="container">
-        <div class="left-column">
-            <div class="leftpart">
+    <header>
+        <nav>
+            <div class="Logo">
+                <img src="/assests/shortcut-icon.png" alt="hub">
+                <h4>Studenthub</h4>
+            </div>
+            <button class="Databasebutton">
+                Database
+            </button>
+        </nav>
+    </header>
+
+    <section class="OuterContainer">
+
+        <div class="LeftPart">
+            <div class="LeftInneritems">
                 <img src="/assests/LeftImage.png" alt="StudentLearningImage" class="LeftColumnImage">
                 <h2>Your Path to Success Starts here</h2>
                 <h3>Ready, Set, Register</h3>
             </div>
-            <div class="Leftpartbottom">
-                <div class="leftpartlogo">
+            <div class="LeftPartbottom">
+                <div class="LeftPartLogo">
                     <img src="/assests/shortcut-icon.png" alt="hub">
                     <h4>Studenthub</h4>
                 </div>
                 <p>Moving Forward</p>
             </div>
         </div>
-        <div class="right-column">
-            <div class="rightcontainer">
+
+        <div class="RightPart">
+            <div class="RigthPartConntainer">
                 <div>
-                    <h4 class="title">Student Register</h4>
-                    <p class="titlepara">Add your Details</p>
+                    <h4 class="Title">Student Register</h4>
+                    <p class="TitleSummary">Add your Details</p>
                 </div>
     
                 <form class="FormField">
-                    <div class="labelinput">
-                        <label for="">Student Name</label>
+                    <div class="LabelInput">
+                        <label for="StudentName">Student Name</label>
                         <input type="text" placeholder="Enter Your name" id="StudentName" name="StudentName">
                     </div>
-                    <div class="labelinput">
-                        <label for="">Student Id</label>
+                    <div class="LabelInput">
+                        <label for="StudentId">Student Id</label>
                         <input type="number" placeholder="Enter Your Id" id="StudentId" name="StudentId">
                     </div>
-                    <div class="labelinput">
-                        <label for="">Email Id</label>
+                    <div class="LabelInput">
+                        <label for="MailId">Email Id</label>
                         <input type="email" placeholder="Enter Your Mail Id" id="MailId" name="MailId">
                     </div>
-                    <div class="labelinput">
-                        <label for="">Contact No</label>
+                    <div class="LabelInput">
+                        <label for="MobileNo">Contact No</label>
                         <input type="number" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo">
                     </div>
 
@@ -56,7 +70,6 @@
                 </form>
             </div>
         </div>
-
     </section>
 
 </body>
