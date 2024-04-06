@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0%;
     box-sizing: border-box;
-    color: white;
 }
 
 body{
@@ -29,6 +28,7 @@ body{
     width: 42%;
     height: 550px;
     border-radius: 10px 0px 0px 10px;
+    color: white;
 }
 
 .leftpart{
@@ -83,4 +83,19 @@ body{
     width: 58%;
     height: 550px;
     border-radius: 0px 10px 10px 0px;
+    color: #000000;
+}
+
+.title{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 30px 0px 0px 30px;
+}
+
+.titlepara{
+    font-family: poppins;
+    font-size: 12px;
+    color: #0000007f;
+    padding: 5px 0px 5px 30px;
 }
