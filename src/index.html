@@ -28,23 +28,33 @@
             </div>
         </div>
         <div class="right-column">
-            <div>
-                <h4 class="title">Student Register</h4>
-                <p class="titlepara">Add your Details</p>
-            </div>
-
-            <form action="">
-                <div class="labelinput">
-                    <label for="">Student Name</label>
-                    <input type="text">
-                </div>
+            <div class="rightcontainer">
                 <div>
-                    <label for=""></label>
+                    <h4 class="title">Student Register</h4>
+                    <p class="titlepara">Add your Details</p>
                 </div>
-               
+    
+                <form class="FormField">
+                    <div class="labelinput">
+                        <label for="">Student Name</label>
+                        <input type="text" placeholder="Enter Your name" id="StudentName" name="StudentName">
+                    </div>
+                    <div class="labelinput">
+                        <label for="">Student Id</label>
+                        <input type="number" placeholder="Enter Your Id" id="StudentId" name="StudentId">
+                    </div>
+                    <div class="labelinput">
+                        <label for="">Email Id</label>
+                        <input type="email" placeholder="Enter Your Mail Id" id="MailId" name="MailId">
+                    </div>
+                    <div class="labelinput">
+                        <label for="">Contact No</label>
+                        <input type="number" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo">
+                    </div>
 
-            </form>
-
+                    <input type="button" value="Add" class="SubmitButton">
+                </form>
+            </div>
         </div>
 
     </section>

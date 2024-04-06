@@ -78,6 +78,10 @@ body{
     color: #ffffff9c;
 }
 
+.FormField{
+    margin-top: 20px;
+}
+
 .right-column{
     background-color: #ffffff;
     width: 58%;
@@ -86,23 +90,55 @@ body{
     color: #000000;
 }
 
+.rightcontainer{
+    padding: 50px 0px 0px 50px;
+}
+
 .title{
     font-family: poppins;
     font-size: 20px;
     font-weight: 500;
-    padding: 30px 0px 0px 30px;
 }
 
 .titlepara{
     font-family: poppins;
     font-size: 12px;
     color: #0000007f;
-    padding: 5px 0px 5px 30px;
 }
 
 .labelinput{
+    font-family: poppins;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 10px 0px 10px 30px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+}
+
+.labelinput label{
+    font-size: 13px;
+    font-weight: 300;
+    margin: 5px 0px 5px 0px;
+}
+
+.labelinput input{
+    width: 300px;
+    padding: 13px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.SubmitButton{
+    margin-top: 10px;
+    width: 150px;
+    padding: 13px;
+    border: 0px;
+    border-radius: 30px;
+    color: white;
+    background-color: #007FFF;
+
+    font-size: 14px;
+    font-weight: bold;
+    font-family: poppins;
 }
