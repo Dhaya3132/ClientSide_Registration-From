@@ -1,5 +1,3 @@
-
-
 //Regex for Validation Forms.
 const StudentName = document.querySelector('#StudentName');
 const StudentId = document.querySelector('#StudentId');
@@ -13,7 +11,7 @@ const MobilePattern = /^[0-9]{10,}$/
 
 StudentName.addEventListener( 'keyup', () =>{
 
-    const Namevalue = StudentName.value;
+    const Namevalue = StudentNames.value;
     if(Namepattern.test(Namevalue))
     {
         StudentName.style.border = '1px solid green';
@@ -72,7 +70,8 @@ StudentMobileNo.addEventListener('keyup', ()=>
         StudentMobileNo.style.backgroundColor = "#ffffff";
     }
 
-})
+});
+
 
 
 
