@@ -51,19 +51,19 @@
                 <form class="FormField">
                     <div class="LabelInput">
                         <label for="StudentName">Student Name</label>
-                        <input type="text" placeholder="Enter Your name" id="StudentName" name="StudentName">
+                        <input type="text" placeholder="Enter Your name" id="StudentName" name="StudentName" required>
                     </div>
                     <div class="LabelInput">
                         <label for="StudentId">Student Id</label>
-                        <input type="number" placeholder="Enter Your Id" id="StudentId" name="StudentId">
+                        <input type="text" placeholder="Enter Your Id" id="StudentId" name="StudentId" inputmode="numeric" required>
                     </div>
                     <div class="LabelInput">
                         <label for="MailId">Email Id</label>
-                        <input type="email" placeholder="Enter Your Mail Id" id="MailId" name="MailId">
+                        <input type="email" placeholder="Enter Your Mail Id" id="MailId" name="MailId" required>
                     </div>
                     <div class="LabelInput">
                         <label for="MobileNo">Contact No</label>
-                        <input type="number" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo">
+                        <input type="text" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo" inputmode="numeric" required>
                     </div>
 
                     <input type="button" value="ADD" class="SubmitButton">
@@ -72,6 +72,7 @@
         </div>
     </section>
 
+    <script src="/dist/Regex.js"></script>
 </body>
 
 </html>
