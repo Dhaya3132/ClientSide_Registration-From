@@ -1,5 +1,4 @@
 const TargetList = document.querySelector('.UnorderContainer');
-const Editabeltext = document.querySelector('.Edit');
 
 TargetList.addEventListener('click', (e)=>{
     if(e.target.classList.contains('icons'))
@@ -8,11 +7,10 @@ TargetList.addEventListener('click', (e)=>{
     }
 });
 
-TargetList.addEventListener('click', (e)=>{
-  if(e.target.classList.contains('deleteicon'))
-  {
-    Editabeltext.setAttribute("contenteditable","true");
-  }
-});
+
+
+
+
+
 
 
