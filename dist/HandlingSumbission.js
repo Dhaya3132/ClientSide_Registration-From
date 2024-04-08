@@ -16,20 +16,25 @@ function addingList(Data){
       <li class="Listitems">
 
         <div class="List_Content">
-            <p>Student Name : ${Data.Name}</p>
-            <p>Student ID : ${Data.Id}</p>
-            <p>Student Email : ${Data.Email}</p>
-            <p>Student MobileNo : ${Data.MobileNo}</p>
+            <p>Student Name : <span contenteditable="false" > ${Data.Name} </span> </p>
+            <p>Student ID : <span contenteditable="false"> ${Data.Id} </span ></p>
+            <p>Student Email : <span contenteditable="false"> ${Data.Email} </span> </p>
+            <p>Student MobileNo : <span contenteditable="false"> ${Data.MobileNo} </span> </p>
         </div>
         
         <i class="fa-solid fa-trash icons"></i>
 
       </li>
+
     `
 
     UnOrderList.appendChild(StudentList);
     Forms.reset();
-
+    StudentNames.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+    StudentIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+    StudentEmailIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+    StudentMobileNos.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+    
 };
 
 Forms.addEventListener('submit', (e)=>{
@@ -46,10 +51,3 @@ Forms.addEventListener('submit', (e)=>{
 
 
 });
-
-
-
-
-
-
-
