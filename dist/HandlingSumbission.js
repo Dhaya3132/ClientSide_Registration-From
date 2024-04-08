@@ -16,16 +16,18 @@ function addingList(Data){
       <li class="Listitems">
 
         <div class="List_Content">
-            <p>Student Name : <span contenteditable="false" > ${Data.Name} </span> </p>
+            <p>Student Name : <span contenteditable="false" class="Edit"> ${Data.Name} </span> </p>
             <p>Student ID : <span contenteditable="false"> ${Data.Id} </span ></p>
             <p>Student Email : <span contenteditable="false"> ${Data.Email} </span> </p>
             <p>Student MobileNo : <span contenteditable="false"> ${Data.MobileNo} </span> </p>
         </div>
         
-        <i class="fa-solid fa-trash icons"></i>
-
+        <div class="Iconsclass">
+            <i class="fa-solid fa-pen-to-square deleteicon"></i>
+            <i class="fa-solid fa-trash icons"></i>
+        </div>
+       
       </li>
-
     `
 
     UnOrderList.appendChild(StudentList);

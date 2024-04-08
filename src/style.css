@@ -219,3 +219,7 @@ nav{
 .List_Content{
     text-align: left;
 }
+
+.Iconsclass i{
+    padding: 10px;
+}
