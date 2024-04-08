@@ -191,8 +191,21 @@ nav{
     background-color: white;
     position: relative;
     width: 100%;
-    max-width: 300px;
+    max-width: 800px;
     padding: 20px;
+    border-radius: 5px;
     margin: 10% auto;
     text-align: center;
+}
+
+.close
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.Listitems{
+    list-style: none;
 }
