@@ -10,7 +10,6 @@ const UnOrderList = document.querySelector('.UnorderContainer');
 
 function addingList(Data){
 
-    console.log(Data);
     const StudentList = document.createElement('li');
     StudentList.classList.add('Student');
     StudentList.innerHTML = `
@@ -23,8 +22,7 @@ function addingList(Data){
     `
 
     UnOrderList.appendChild(StudentList);
-
-    console.log('element added');
+    Forms.reset();
 
 };
 

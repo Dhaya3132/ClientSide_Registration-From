@@ -15,11 +15,9 @@ StudentName.addEventListener( 'keyup', () =>{
     if(Namepattern.test(Namevalue))
     {
         StudentName.style.border = '1px solid green';
-        StudentName.style.backgroundColor = "#ffffff";
     }
     else{
         StudentName.style.border = '1px solid red';
-        StudentName.style.backgroundColor = "#ffffff";
     }
 
 });
@@ -30,12 +28,10 @@ StudentId.addEventListener( 'keyup', () =>{
     if(Idpattern.test(Idvalue))
     {
         StudentId.style.border = '1px solid green';
-        StudentId.style.backgroundColor = "#ffffff";
     }
     else
     {
         StudentId.style.border = '1px solid red';
-        StudentId.style.backgroundColor = "#ffffff";
     }
 
 });
