@@ -4,21 +4,28 @@ const StudentEmailIds = document.querySelector('#MailId');
 const StudentMobileNos = document.querySelector('#MobileNo');
 
 const Forms = document.querySelector('.FormField');
-const Unorderitems = document.querySelector('.Unorderlistitems');
+const UnOrderList = document.querySelector('.UnorderContainer');
+
+
 
 function addingList(Data){
 
     console.log(Data);
-    // Unorderitems.innerHTML = `
-    //   <li class="Listitems">
-    //      <p>${Data.Name}</p>
-    //      <p>${Data.Id}</p>
-    //      <p>${Data.Email}</p>
-    //      <p>${Data.MobileNo}</p>
-    //   </li>
-    // `
+    const StudentList = document.createElement('li');
+    StudentList.classList.add('Student');
+    StudentList.innerHTML = `
+      <li class="Listitems">
+         <p>${Data.Name}</p>
+         <p>${Data.Id}</p>
+         <p>${Data.Email}</p>
+         <p>${Data.MobileNo}</p>
+      </li>
+    `
+
+    UnOrderList.appendChild(StudentList);
 
     console.log('element added');
+
 };
 
 Forms.addEventListener('submit', (e)=>{
@@ -30,9 +37,12 @@ Forms.addEventListener('submit', (e)=>{
         Email : StudentEmailIds.value,
         MobileNo : StudentMobileNos.value,
     };
+
     addingList(Data);
 
+
 });
+
 
 
 
