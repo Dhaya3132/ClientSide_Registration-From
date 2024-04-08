@@ -14,10 +14,16 @@ function addingList(Data){
     StudentList.classList.add('Student');
     StudentList.innerHTML = `
       <li class="Listitems">
-         <p>${Data.Name}</p>
-         <p>${Data.Id}</p>
-         <p>${Data.Email}</p>
-         <p>${Data.MobileNo}</p>
+
+        <div class="List_Content">
+            <p>Student Name : ${Data.Name}</p>
+            <p>Student ID : ${Data.Id}</p>
+            <p>Student Email : ${Data.Email}</p>
+            <p>Student MobileNo : ${Data.MobileNo}</p>
+        </div>
+        
+        <i class="fa-solid fa-trash icons"></i>
+
       </li>
     `
 

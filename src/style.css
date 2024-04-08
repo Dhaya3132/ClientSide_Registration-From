@@ -196,6 +196,7 @@ nav{
     border-radius: 5px;
     margin: 10% auto;
     text-align: center;
+    list-style:none;
 }
 
 .close
@@ -207,5 +208,14 @@ nav{
 }
 
 .Listitems{
-    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid black ;
+    width: 100%;
+}
+
+.List_Content{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
