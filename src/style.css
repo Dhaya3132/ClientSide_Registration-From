@@ -6,30 +6,30 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #f5f5f5;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     margin-top: 10px;
     justify-content: flex-end;
 }
 
-.Logo{
+.Logo {
     display: flex;
     align-items: center;
     font-family: poppins;
 }
 
-.Logo h4{
+.Logo h4 {
     font-weight: 400;
     font-size: 16px;
     margin-right: 15px;
 }
 
-.Databasebutton{
+.Databasebutton {
     padding: 8px;
     background-color: #007FFF;
     border-radius: 2px;
@@ -40,19 +40,19 @@ nav{
     margin-right: 15px;
 }
 
-.OuterContainer{
+.OuterContainer {
     height: 550px;
     width: 950px;
     max-width: 100%;
     border-radius: 10px;
     position: absolute;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
 }
 
-.LeftPart{
+.LeftPart {
     background-color: #007FFF;
     width: 42%;
     height: 550px;
@@ -60,46 +60,46 @@ nav{
     color: white;
 }
 
-.LeftInneritems{
+.LeftInneritems {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 50px;
-    margin:auto;
+    margin: auto;
 }
 
-.LeftColumnImage{
+.LeftColumnImage {
     width: 300px;
-    height: 250px;  
+    height: 250px;
 }
 
-.LeftPart h2{
+.LeftPart h2 {
     font-family: poppins;
     font-weight: 300;
     font-size: 22px;
 }
 
-.LeftPart h3{
+.LeftPart h3 {
     font-family: poppins;
     font-weight: 200;
     font-size: 16px;
     color: #ffffff9c;
 }
 
-.LeftPartLogo{
+.LeftPartLogo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-.LeftPartLogo h4{
+.LeftPartLogo h4 {
     font-family: poppins;
     font-weight: 500;
     font-size: 19px;
 }
 
-.LeftPartbottom p{
+.LeftPartbottom p {
     text-align: center;
     font-family: poppins;
     font-weight: 300;
@@ -107,11 +107,11 @@ nav{
     color: #ffffff9c;
 }
 
-.FormField{
+.FormField {
     margin-top: 20px;
 }
 
-.RightPart{
+.RightPart {
     background-color: #ffffff;
     width: 58%;
     height: 550px;
@@ -119,7 +119,7 @@ nav{
     color: #000000;
 }
 
-.RigthPartConntainer{
+.RigthPartConntainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,20 +127,20 @@ nav{
     padding: 40px;
 }
 
-.Title{
+.Title {
     font-family: poppins;
     font-size: 20px;
     font-weight: 500;
 }
 
-.TitleSummary{
+.TitleSummary {
     font-family: poppins;
     font-size: 12px;
     color: #0000007f;
     text-align: center;
 }
 
-.LabelInput{
+.LabelInput {
     font-family: poppins;
     display: flex;
     flex-direction: column;
@@ -150,20 +150,20 @@ nav{
 
 }
 
-.LabelInput label{
+.LabelInput label {
     font-size: 13px;
     font-weight: 300;
     margin: 5px 0px 5px 0px;
 }
 
-.LabelInput input{
+.LabelInput input {
     width: 300px;
     padding: 13px;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.422);
 }
 
-.SubmitButton{
+.SubmitButton {
     margin-top: 10px;
     width: 300px;
     padding: 13px;
@@ -176,8 +176,8 @@ nav{
     font-family: poppins;
 }
 
-.DataContainer{
-    background-color: rgb(0, 0, 0,0.5);
+.DataContainer {
+    background-color: rgb(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
     top: 0;
@@ -186,21 +186,20 @@ nav{
     display: none;
 }
 
-.UnorderContainer{
+.UnorderContainer {
     font-family: poppins;
     background-color: white;
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 30px;
     border-radius: 5px;
     margin: 10% auto;
     text-align: center;
-    list-style:none;
+    list-style: none;
 }
 
-.close
-{
+.close {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -208,18 +207,68 @@ nav{
 
 }
 
-.Listitems{
-    display: flex;
-    justify-content: space-between;
-    border-bottom:1px solid black ;
+table.customTable {
     width: 100%;
-    padding: 10px;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #7EA8F8;
+    border-style: solid;
+    color: #000000;
+    margin-top: 20px;
 }
 
-.List_Content{
-    text-align: left;
+table.customTable td,
+table.customTable th {
+    border-width: 1px;
+    border-color: #007FFF;
+    border-style: solid;
+    padding: 5px;
 }
 
-.Iconsclass i{
-    padding: 10px;
+table.customTable thead {
+    background-color: #7EA8F8;
+}
+
+.DataField {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.LabelInput0 {
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+
+}
+.LabelInput0 label {
+    font-size: 13px;
+    font-weight: 300;
+    margin: 5px 0px 5px 0px;
+}
+
+.LabelInput0 input {
+    width: 150px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.422);
+}
+
+.UpdateButton {
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    background-color: #007FFF;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: poppins;
 }

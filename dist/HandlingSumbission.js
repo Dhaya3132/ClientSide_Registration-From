@@ -4,52 +4,80 @@ const StudentEmailIds = document.querySelector('#MailId');
 const StudentMobileNos = document.querySelector('#MobileNo');
 
 const Forms = document.querySelector('.FormField');
-const UnOrderList = document.querySelector('.UnorderContainer');
+const StudentList = document.querySelector('.StudentTable');
+const DataForm = document.querySelector('.DataField');
 
+const edit = document.querySelector('.editicon');
 
+var selector = null;
 
-function addingList(Data){
+function addingList(Data) {
 
-    const StudentList = document.createElement('li');
-    StudentList.classList.add('Student');
-    StudentList.innerHTML = `
-      <li class="Listitems">
+    const StudentLists = document.createElement('tr');
+    StudentLists.classList.add('Student');
+    StudentLists.innerHTML = `
+        <tr>
+          <td>${Data.Name} </td>
+          <td>${Data.Id}</td>
+          <td>${Data.Email} </td>
+          <td>${Data.MobileNo}</td>
+          <td>
+            <div class="Iconsclass">
+               <i class="fa-solid fa-pen-to-square editicon" onClick = "update(this)"></i>
+               <i class="fa-solid fa-trash icons deleteicon"></i>
+            </div>
+          </td>  
+        </tr> 
+      `
 
-        <div class="List_Content">
-            <p>Student Name :  <span contenteditable="false" id="Edit"> ${Data.Name} </span> </p>
-            <p>Student ID : <span contenteditable="false" id="Edit"> ${Data.Id} </span ></p>
-            <p>Student Email : <span contenteditable="false" id="Edit"> ${Data.Email} </span> </p>
-            <p>Student MobileNo : <span contenteditable="false" id="Edit"> ${Data.MobileNo} </span> </p>
-        </div>
-        
-        <div class="Iconsclass">
-            <i class="fa-solid fa-pen-to-square editicon"></i>
-            <i class="fa-solid fa-trash icons deleteicon"></i>
-        </div>
-       
-      </li>
-    `
-
-    UnOrderList.appendChild(StudentList);
+    StudentList.appendChild(StudentLists);
     Forms.reset();
     StudentNames.style.border = '1px solid rgba(0, 0, 0, 0.422)';
     StudentIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
     StudentEmailIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
     StudentMobileNos.style.border = '1px solid rgba(0, 0, 0, 0.422)';
-    
+
 };
 
-Forms.addEventListener('submit', (e)=>{
 
-    e.preventDefault();
-    const Data = {
-        Name : StudentNames.value,
-        Id : StudentIds.value,
-        Email : StudentEmailIds.value,
-        MobileNo : StudentMobileNos.value,
-    };
+Forms.addEventListener('submit', (e) => {
 
-    addingList(Data);
+  e.preventDefault();
+  const Data = {
+    Name: StudentNames.value,
+    Id: StudentIds.value,
+    Email: StudentEmailIds.value,
+    MobileNo: StudentMobileNos.value,
+  };
 
-
+  addingList(Data);
 });
+
+
+function update(IndexCurent) {
+
+  DataForm.style.display = 'flex';
+
+  selector = IndexCurent.parentElement.parentElement.parentElement;
+
+  console.log(selector);
+
+  document.querySelector('#NewName').value = selector.cells[0].innerHTML;
+  document.querySelector('#NewId').value = selector.cells[1].innerHTML;
+  document.querySelector('#NewEmail').value = selector.cells[2].innerHTML;
+  document.querySelector('#NewNo').value = selector.cells[3].innerHTML;
+
+}
+
+
+DataForm.addEventListener('submit', (e)=>{
+  e.preventDefault();
+
+  selector.cells[0].innerHTML = document.querySelector('#NewName').value;
+  selector.cells[1].innerHTML = document.querySelector('#NewId').value;
+  selector.cells[2].innerHTML = document.querySelector('#NewEmail').value;
+  selector.cells[3].innerHTML = document.querySelector('#NewNo').value;
+
+  DataForm.style.display = 'none';
+});
+

@@ -26,14 +26,57 @@
             </button>
 
             <section class="DataContainer">
-        
-                <div>
-                    <ul class="UnorderContainer">
-                        <div class="close">X</div>
-                        
-                    </ul>
+
+                <form class="DataField">
+
+                    <div class="LabelInput0">
+
+                        <label for="StudentName">Student Name</label>
+                        <input type="text" placeholder="Enter Your name" id="NewName" required>
+                    </div>
+
+                    <div class="LabelInput0">
+
+                        <label for="StudentId">Student Id</label>
+                        <input type="text" placeholder="Enter Your Id" inputmode="numeric"  id="NewId" required>
+                    </div>
+
+                    <div class="LabelInput0">
+                        <label for="MailId">Email Id</label>
+                        <input type="email" placeholder="Enter Your Mail Id" id="NewEmail" required>
+                    </div>
+
+                    <div class="LabelInput0">
+                        <label for="MobileNo">Contact No</label>
+                        <input type="text" placeholder="Enter Your Mobile No" inputmode="numeric" id="NewNo" required>
+                    </div>
+
+                    <button type="submit" class="UpdateButton" onclick="updatedform()">Update</button>
+                </form>
+
+
+
+                <div class="UnorderContainer">
+                    <div class="close">X</div>
+
+                    <table class="customTable">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student Id</th>
+                                <th>Student Email</th>
+                                <th>Student MobilNo</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="StudentTable">
+
+
+                        </tbody>
+                    </table>
+
                 </div>
-               
+
             </section>
         </nav>
 
@@ -42,7 +85,7 @@
     <section class="OuterContainer">
 
         <div class="LeftPart">
-            
+
             <div class="LeftInneritems">
                 <img src="/assests/LeftImage.png" alt="StudentLearningImage" class="LeftColumnImage">
                 <h2>Your Path to Success Starts here</h2>
@@ -68,9 +111,9 @@
 
                     <h4 class="Title">Student Register</h4>
                     <p class="TitleSummary">Add your Details</p>
-                    
+
                 </div>
-    
+
                 <form class="FormField">
 
                     <div class="LabelInput">
@@ -82,7 +125,8 @@
                     <div class="LabelInput">
 
                         <label for="StudentId">Student Id</label>
-                        <input type="text" placeholder="Enter Your Id" id="StudentId" name="StudentId" inputmode="numeric" required>
+                        <input type="text" placeholder="Enter Your Id" id="StudentId" name="StudentId"
+                            inputmode="numeric" required>
                     </div>
 
                     <div class="LabelInput">
@@ -92,7 +136,8 @@
 
                     <div class="LabelInput">
                         <label for="MobileNo">Contact No</label>
-                        <input type="text" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo" inputmode="numeric" required>
+                        <input type="text" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo"
+                            inputmode="numeric" required>
                     </div>
 
                     <button type="submit" class="SubmitButton">ADD</button>
