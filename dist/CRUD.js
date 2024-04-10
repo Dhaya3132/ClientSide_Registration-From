@@ -51,11 +51,6 @@ Forms.addEventListener('submit', (e) => {
 
   e.preventDefault();
 
-  if(StudentNames.value == "")
-  {
-    ErrorName.innerText = "Please Enter Your Name";
-  }
-
   const Data = {
     Name: StudentNames.value,
     Id: StudentIds.value,
