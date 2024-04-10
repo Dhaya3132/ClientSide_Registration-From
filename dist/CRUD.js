@@ -23,15 +23,15 @@ var selector = null;
 
 function addingList(Data) {
 
-    // I have created element called tr
+  // I have created element called tr
 
-    const StudentLists = document.createElement('tr');
-    StudentLists.classList.add('Student');
+  const StudentLists = document.createElement('tr');
+  StudentLists.classList.add('Student');
 
-    //I have create template string in this row will added with user value to table 
-    //NOTE : I have been passing the value dynamically. By use of this we can easily add our data as element without storing those object into array.
+  //I have create template string in this row will added with user value to table 
+  //NOTE : I have been passing the value dynamically. By use of this we can easily add our data as element without storing those object into array.
 
-    StudentLists.innerHTML = `
+  StudentLists.innerHTML = `
         <tr>
           <td>${Data.Name} </td>
           <td>${Data.Id}</td>
@@ -46,16 +46,16 @@ function addingList(Data) {
         </tr> 
       `
 
-    StudentList.appendChild(StudentLists);
-    
-    //after submiting the value the form should come to its original state for that i have used reset.
+  StudentList.appendChild(StudentLists);
 
-    Forms.reset();
+  //after submiting the value the form should come to its original state for that i have used reset.
 
-    StudentNames.style.border = '1px solid rgba(0, 0, 0, 0.422)';
-    StudentIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
-    StudentEmailIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
-    StudentMobileNos.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+  Forms.reset();
+
+  StudentNames.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+  StudentIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+  StudentEmailIds.style.border = '1px solid rgba(0, 0, 0, 0.422)';
+  StudentMobileNos.style.border = '1px solid rgba(0, 0, 0, 0.422)';
 
 };
 
@@ -100,7 +100,8 @@ function update(IndexCurent) {
 }
 
 //After editing the text the value will updated while clicking the form.
-DataForm.addEventListener('submit', (e)=>{
+
+DataForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
   selector.cells[0].innerHTML = document.querySelector('#NewName').value;
@@ -111,4 +112,8 @@ DataForm.addEventListener('submit', (e)=>{
   DataForm.style.display = 'none';
 });
 
-// StudentList.style.overflowY = 'scroll';
+// StudentList.style.overflowY = 'scroll'; 
+//--> This to dynamic scroll bar the database i have not used here because i have storing the data in the form table, it will not look good.
+
+
+//Login for Editing and Update the data.
