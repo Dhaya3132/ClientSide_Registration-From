@@ -12,19 +12,27 @@
 
 <body>
 
+    <!-- Header section contains Logo and Database [ Student Details records ] -->
     <header>
         <nav>
-
+            <!-- Logo -->
             <div class="Logo">
-                <img src="/assests/shortcut-icon.png" alt="hub"> 
+                <img src="/assests/shortcut-icon.png" alt="hub">
                 <h4>Studenthub</h4>
             </div>
 
+            <!-- Student Data record area -->
             <button class="Databasebutton" id="Button">
                 Database
             </button>
 
+            <!-- This is the datacontainer in which all those student data record stored inside this. The woring of the container is like popup 
+            1 ) while clicking the database button 
+            2 ) Datacontainer area become active and display the data over screen. The student registration form become non active 
+                This works like an popup wrapper element we can click and close the container by the close element -->
             <section class="DataContainer">
+
+                <!-- This form for editing the existing data in record -->
                 <form class="DataField">
 
                     <div class="LabelInput0">
@@ -34,7 +42,7 @@
 
                     <div class="LabelInput0">
                         <label for="StudentId">Student Id</label>
-                        <input type="text" placeholder="Enter Your Id" inputmode="numeric"  id="NewId" required>
+                        <input type="text" placeholder="Enter Your Id" inputmode="numeric" id="NewId" required>
                     </div>
 
                     <div class="LabelInput0">
@@ -50,6 +58,7 @@
                     <button type="submit" class="UpdateButton" onclick="updatedform()">Update</button>
                 </form>
 
+                <!-- All the datas are stored inside the UnorderContainer area -->
                 <div class="UnorderContainer">
                     <div class="close">X</div>
 
@@ -63,6 +72,8 @@
                                 <th>Actions</th>
                             </tr>
                         </thead>
+
+                        <!-- Inside the table body area student record are record are stored as a row. -->
                         <tbody class="StudentTable">
 
                         </tbody>
@@ -74,6 +85,7 @@
         </nav>
     </header>
 
+    <!-- This the main area for student registration form here the student data will collected from the form -->
     <section class="OuterContainer">
         <div class="LeftPart">
 
@@ -106,23 +118,27 @@
                     <div class="LabelInput">
                         <label for="StudentName">Student Name</label>
                         <input type="text" placeholder="Enter Your name" id="StudentName" name="StudentName" required>
+                        <p id="Error_Name"></p>
                     </div>
 
                     <div class="LabelInput">
                         <label for="StudentId">Student Id</label>
                         <input type="text" placeholder="Enter Your Id" id="StudentId" name="StudentId"
                             inputmode="numeric" required>
+                        <p id="Error_Id"></p>
                     </div>
 
                     <div class="LabelInput">
                         <label for="MailId">Email Id</label>
                         <input type="email" placeholder="Enter Your Mail Id" id="MailId" name="MailId" required>
+                        <p id="Error_Email"></p>
                     </div>
 
                     <div class="LabelInput">
                         <label for="MobileNo">Contact No</label>
                         <input type="text" placeholder="Enter Your Mobile No" id="MobileNo" name="MobileNo"
                             inputmode="numeric" required>
+                        <p id="Error_Mobile"></p>
                     </div>
 
                     <button type="submit" class="SubmitButton">ADD</button>
@@ -134,11 +150,17 @@
     </section>
 
 
-    <script src="/dist/Regex.js"></script>
-    <script src="/dist/HandlingSumbission.js"></script>
-    <script src="/dist/PopWrapper.js"></script>
-    <script src="/dist/RemovingList.js"></script>
+    <!-- Here i have added four scripts 
+    I have seperated all functionality into a seperated components for better usability and readablity. -->
 
+    <!-- This script for regular expression for validating the forms -->
+    <script src="/dist/Regex.js"></script>
+    <!-- This script for Handling Submmission of the form -->
+    <script src="/dist/HandlingSumbission.js"></script>
+    <!-- This script for PopWrapper -->
+    <script src="/dist/PopWrapper.js"></script>
+    <!-- This script for Removing list -->
+    <script src="/dist/RemovingList.js"></script>
 
 </body>
 
