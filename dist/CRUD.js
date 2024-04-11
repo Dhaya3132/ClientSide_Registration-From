@@ -116,4 +116,4 @@ DataForm.addEventListener('submit', (e) => {
 //--> This to dynamic scroll bar the database i have not used here because i have storing the data in the form table, it will not look good.
 
 
-//Login for Editing and Update the data.
+// Logic in the Documentation file

@@ -14,3 +14,5 @@ close.addEventListener('click', ()=>{
    List.style.display = 'none';
    OuterContainer.style.display='flex';
 });
+
+// Logic in the Documentation file

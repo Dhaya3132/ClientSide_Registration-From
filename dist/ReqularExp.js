@@ -74,3 +74,5 @@ StudentMobileNo.addEventListener('keyup', ()=>
     }
 
 });
+
+// Logic in the Documentation file

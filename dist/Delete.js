@@ -7,10 +7,4 @@ TargetList.addEventListener('click', (e)=>{
     }
 });
 
-
-
-
-
-
-
-
+// Logic in the Documentation file
