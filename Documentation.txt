@@ -22,6 +22,7 @@ LOGIC FOR ADDING THE DATA :
 Before adding the data, 
 How the data the should be looks while seeing it? For that i have stored all the values in tables and rows.
 For my future use I have added in table rows and columns, I want to implement this project by exporting all those data into excel sheet by clicking button.
+The user cannot empty row for that i have used the required for the input the user cannot add the empty value in the form field.
 
 Adding the data : 
 
@@ -81,9 +82,5 @@ For example : You have been clicking the 3 row student data to edit by clicking 
               In this clicked student data value will be availabe inside the form field value by without typing again and again value to update.
               After Editing the value clicking update button the values will updated to table.
 
-Reference Edit UI from Dribbble
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-NOTE -- I have not used the dynamic scroll i have added the functionality of the dynamica scroll bar in the code due to I have added to student data into table by adding the scroll bar the table ui will be spoiled.
