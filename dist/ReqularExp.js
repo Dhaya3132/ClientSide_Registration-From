@@ -17,7 +17,7 @@ const NameError = document.getElementById('Error_Name');
 const IdError = document.getElementById('Error_Id'); 
 const EmailError = document.getElementById('Error_Email'); 
 const MobileError = document.getElementById('Error_Mobile');
-const SubmitButton = document.getElementById('submitbutton');
+
 
 //regex for student name...this will show the green color border if the user enters the crct name if its wrong red color.
 StudentName.addEventListener('keyup', () => {
@@ -30,6 +30,7 @@ StudentName.addEventListener('keyup', () => {
     else {
         NameError.style.display = 'block';
         StudentName.style.border = '1px solid red';
+
     }
 });
 
@@ -40,12 +41,13 @@ StudentId.addEventListener('keyup', () => {
     if (Idpattern.test(Idvalue)) {
         StudentId.style.border = '1px solid green';
         IdError.style.display = 'none';
+
     }
     else {
         StudentId.style.border = '1px solid red';
         IdError.style.display = 'block';
-    }
 
+    }
 });
 
 //regex for student email...this will show the green color border if the user enters the crct name if its wrong red color.
@@ -55,12 +57,13 @@ StudentEmailId.addEventListener('keyup', () => {
     if (MailIdPattern.test(MailIdvalue)) {
         StudentEmailId.style.border = '1px solid green';
         EmailError.style.display = 'none';
+
     }
     else {
         StudentEmailId.style.border = '1px solid red';
         EmailError.style.display = 'block';
-    }
 
+    }
 });
 
 //regex for student mobile...this will show the green color border if the user enters the crct name if its wrong red color.
@@ -69,6 +72,7 @@ StudentMobileNo.addEventListener('keyup', () => {
     if (MobilePattern.test(Numbervalue)) {
         StudentMobileNo.style.border = '1px solid green';
         MobileError.style.display = 'none';
+
     }
     else {
         StudentMobileNo.style.border = '1px solid red';
