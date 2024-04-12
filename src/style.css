@@ -282,3 +282,28 @@ table.customTable thead {
     font-weight: bold;
     font-family: poppins;
 }
+
+#Error_Name{
+    font-size: 12px;
+    color: red;
+    margin-top: 2px;
+    display: none;
+}
+#Error_Id{
+    font-size: 12px;
+    color: red;
+    margin-top: 2px;
+    display: none;
+}
+#Error_Email{
+    font-size: 12px;
+    color: red;
+    margin-top: 2px;
+    display: none;
+}
+#Error_Mobile{
+    font-size: 12px;
+    color: red;
+    margin-top: 2px;
+    display: none;
+}

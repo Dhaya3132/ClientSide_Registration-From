@@ -12,67 +12,69 @@ const MailIdPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z]+(\.[a-zA-Z]+)*$/;
 //Student mobile pattern accepts only 10 digits.
 const MobilePattern = /^[0-9]{10}$/;
 
+
+const NameError = document.getElementById('Error_Name');
+const IdError = document.getElementById('Error_Id'); 
+const EmailError = document.getElementById('Error_Email'); 
+const MobileError = document.getElementById('Error_Mobile');
+const SubmitButton = document.getElementById('submitbutton');
+
 //regex for student name...this will show the green color border if the user enters the crct name if its wrong red color.
-StudentName.addEventListener( 'keyup', () =>{
+StudentName.addEventListener('keyup', () => {
 
     const Namevalue = StudentName.value;
-    if(Namepattern.test(Namevalue))
-    {
+    if (Namepattern.test(Namevalue)) {
         StudentName.style.border = '1px solid green';
+        NameError.style.display = 'none';
     }
-    else{
+    else {
+        NameError.style.display = 'block';
         StudentName.style.border = '1px solid red';
     }
-
 });
 
 //regex for student id...this will show the green color border if the user enters the crct name if its wrong red color.
-StudentId.addEventListener( 'keyup', () =>{
+StudentId.addEventListener('keyup', () => {
 
     const Idvalue = StudentId.value;
-    if(Idpattern.test(Idvalue))
-    {
+    if (Idpattern.test(Idvalue)) {
         StudentId.style.border = '1px solid green';
+        IdError.style.display = 'none';
     }
-    else
-    {
+    else {
         StudentId.style.border = '1px solid red';
+        IdError.style.display = 'block';
     }
 
 });
 
 //regex for student email...this will show the green color border if the user enters the crct name if its wrong red color.
-StudentEmailId.addEventListener('keyup', ()=>
-{
+StudentEmailId.addEventListener('keyup', () => {
+
     const MailIdvalue = StudentEmailId.value;
-    if(MailIdPattern.test(MailIdvalue))
-    {
+    if (MailIdPattern.test(MailIdvalue)) {
         StudentEmailId.style.border = '1px solid green';
-        StudentEmailId.style.backgroundColor = "#ffffff";
+        EmailError.style.display = 'none';
     }
-    else
-    {
+    else {
         StudentEmailId.style.border = '1px solid red';
-        StudentEmailId.style.backgroundColor = "#ffffff";
+        EmailError.style.display = 'block';
     }
 
 });
 
 //regex for student mobile...this will show the green color border if the user enters the crct name if its wrong red color.
-StudentMobileNo.addEventListener('keyup', ()=>
-{
+StudentMobileNo.addEventListener('keyup', () => {
     const Numbervalue = StudentMobileNo.value;
-    if(MobilePattern.test(Numbervalue))
-    {
+    if (MobilePattern.test(Numbervalue)) {
         StudentMobileNo.style.border = '1px solid green';
-        StudentMobileNo.style.backgroundColor = "#ffffff";
+        MobileError.style.display = 'none';
     }
-    else
-    {
+    else {
         StudentMobileNo.style.border = '1px solid red';
-        StudentMobileNo.style.backgroundColor = "#ffffff";
+        MobileError.style.display = 'block';
     }
-
 });
 
 // Logic in the Documentation file
+

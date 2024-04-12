@@ -21,6 +21,7 @@ var selector = null;
 // These datas stored in the table.
 // I have been passing the table row dynamically using template literals.
 
+
 function addingList(Data) {
 
   // I have created element called tr
@@ -112,7 +113,7 @@ DataForm.addEventListener('submit', (e) => {
   DataForm.style.display = 'none';
 });
 
-// StudentList.style.overflowY = 'scroll'; 
+// StudentList.style.overflowY = 'scroll';
 //--> This to dynamic scroll bar the database i have not used here because i have storing the data in the form table, it will not look good.
 
 
