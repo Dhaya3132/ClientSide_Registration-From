@@ -18,6 +18,8 @@ const IdError = document.getElementById('Error_Id');
 const EmailError = document.getElementById('Error_Email'); 
 const MobileError = document.getElementById('Error_Mobile');
 
+const SubmitButton = document.getElementById('submitbutton');
+
 
 //regex for student name...this will show the green color border if the user enters the crct name if its wrong red color.
 StudentName.addEventListener('keyup', () => {
@@ -26,11 +28,13 @@ StudentName.addEventListener('keyup', () => {
     if (Namepattern.test(Namevalue)) {
         StudentName.style.border = '1px solid green';
         NameError.style.display = 'none';
+        SubmitButton.disabled = false;
+
     }
     else {
         NameError.style.display = 'block';
         StudentName.style.border = '1px solid red';
-
+        SubmitButton.disabled = true;
     }
 });
 
@@ -41,11 +45,12 @@ StudentId.addEventListener('keyup', () => {
     if (Idpattern.test(Idvalue)) {
         StudentId.style.border = '1px solid green';
         IdError.style.display = 'none';
-
+        SubmitButton.disabled = false;
     }
     else {
         StudentId.style.border = '1px solid red';
         IdError.style.display = 'block';
+        SubmitButton.disabled = true;
 
     }
 });
@@ -57,12 +62,12 @@ StudentEmailId.addEventListener('keyup', () => {
     if (MailIdPattern.test(MailIdvalue)) {
         StudentEmailId.style.border = '1px solid green';
         EmailError.style.display = 'none';
-
+        SubmitButton.disabled = false;
     }
     else {
         StudentEmailId.style.border = '1px solid red';
         EmailError.style.display = 'block';
-
+        SubmitButton.disabled = true;
     }
 });
 
@@ -72,11 +77,13 @@ StudentMobileNo.addEventListener('keyup', () => {
     if (MobilePattern.test(Numbervalue)) {
         StudentMobileNo.style.border = '1px solid green';
         MobileError.style.display = 'none';
-
+        SubmitButton.disabled = false;
     }
     else {
         StudentMobileNo.style.border = '1px solid red';
         MobileError.style.display = 'block';
+        SubmitButton.disabled = true;
+
     }
 });
 
